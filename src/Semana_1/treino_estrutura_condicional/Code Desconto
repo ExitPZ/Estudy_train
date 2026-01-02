@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Valor da compra: ");
+        double c1 = sc.nextDouble();
+
+        if (c1 <= 100) {
+            double desconto = c1 * 0.05;
+            double total = c1 - desconto;
+            System.out.printf("Total a pagar com 5%% de desconto: R$ %.2f%n", total);
+        } else if (c1 <= 300) {
+            double desconto = c1 * 0.10;
+            double total = c1 - desconto;
+            System.out.printf("Total a pagar com 10%% de desconto: R$ %.2f%n", total);
+        } else {
+                double desconto = c1 * 0.15;
+                double total = c1 - desconto;
+                System.out.printf("Total a pagar com 15%% de desconto: R$ %.2f%n", total);
+            System.out.printf("Total a pagar: R$ %.2f%n", c1);
+        }
+        sc.close();
+
+
+    }
+}

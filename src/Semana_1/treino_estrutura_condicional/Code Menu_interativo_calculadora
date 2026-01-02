@@ -1,0 +1,60 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===== MENU =====");
+        System.out.println("1 - Somar");
+        System.out.println("2 - Subtrair");
+        System.out.println("3 - Multiplicar");
+        System.out.println("4 - Dividir");
+        System.out.print("Escolha uma opção: ");
+
+        int opcao = sc.nextInt();
+
+        System.out.print("Digite primeiro número: ");
+        int num1 = sc.nextInt();
+
+
+
+        System.out.print("Digite segundo número: ");
+        int num2 = sc.nextInt();
+
+
+        switch (opcao) {
+            case 1:
+                System.out.println("Resultado: " + (num1 + num2));
+                break;
+
+            case 2:
+                System.out.println("Resultado: " + (num1 - num2));
+                break;
+
+            case 3:
+                System.out.println("Resultado: " + (num1 * num2));
+                break;
+
+            case 4:
+                if (num2 != 0) {
+                    System.out.println("Resultado: " + (num1 / num2));
+                } else {
+                    System.out.println("Erro: Divisão por zero não é permitida.");
+                    return;
+                }
+                break;
+
+            default:
+                System.out.println("Erro: Opcao invalida.");
+                return;
+
+
+        }
+
+
+        sc.close();
+
+
+
+
+    }
+}

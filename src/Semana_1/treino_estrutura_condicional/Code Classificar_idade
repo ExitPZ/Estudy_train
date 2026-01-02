@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        int n = sc.nextInt();
+
+        if(n <= 13) {
+            System.out.println("você tem: " + n + " anos, você é uma criança.");
+        } else if(n > 13 && n <= 18) {
+            System.out.println("você tem: " + n + " anos, você é um adolescente.");
+        } else if (n > 18 && n <= 60) {
+            System.out.println("você tem: " + n + " anos, você é um adulto.");
+        } else {
+            System.out.println("você tem: " + n + " anos, você é um idoso.");
+
+        }
+        sc.close();
+
+    }
+}
+
+*/ && operador que significa "e";
