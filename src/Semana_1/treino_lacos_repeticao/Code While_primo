@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número: ");
+        int num = sc.nextInt();
+
+        if (num <= 1 ) {
+            System.out.println("Não é primo");
+
+        } else {
+            int divisor = 2;
+            boolean p = true;
+
+            int limite = (int) Math.sqrt(num);
+
+            while (divisor <= limite) {
+                if (num % divisor == 0) {
+                    p = false;
+                    break;
+                }
+                divisor++;
+            }
+            if (p) {
+                System.out.println("É primo");
+            } else {
+                System.out.println("Não é primo");
+            }
+
+        }
+        sc.close();
+    }
+}

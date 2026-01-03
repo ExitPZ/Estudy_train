@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int soma = 0;
+        for (int i = 0; i < 100; i++) {
+            soma += i;
+
+        }
+        System.out.println("soma: " + soma);
+        sc.close();
+
+
+
+    }
+}
+
+//  Faça um programa que calcule a soma dos números inteiros de 1 a 100 e imprima o resultado. Aprender o uso de += em
+// laços de repetição.

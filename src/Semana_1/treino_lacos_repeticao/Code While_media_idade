@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int idade;
+        int soma = 0;
+        int quantidade = 0;
+
+        System.out.println("Digite todas idades: (finaliza com negativo)");
+        idade = sc.nextInt();
+
+
+
+
+
+        while (idade >= 0) {
+            soma += idade;
+            quantidade++;
+
+            idade = sc.nextInt();
+
+        }
+
+        if (quantidade > 0) {
+            double media = (double) soma / quantidade;
+            System.out.printf("Média das idades: %.2f%n", media);
+        } else {
+            System.out.println("Nenhuma idade válida foi inserida.");
+        }
+        sc.close();
+
+    }
+}

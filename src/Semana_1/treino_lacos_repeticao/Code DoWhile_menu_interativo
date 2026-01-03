@@ -1,5 +1,6 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.InputMismatchException;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -20,8 +21,8 @@ public class Main {
                 System.out.println("Entrada inválida! Digite apenas números.");
                 sc.next();   // limpar o buffer do scanner
                 opcao = -1; // força repetir o menu
-                continue;
             }
+
 
             switch (opcao) {
                 case 1:

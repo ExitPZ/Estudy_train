@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite quantos números quiser, um por linha:  (0 encerra)");
+
+         int n = sc.nextInt();
+
+        int s = 0;
+
+        while ( n != 0 ) {
+            s += n;
+            n = sc.nextInt();
+        }
+        System.out.println("A soma dos números é: " + s);
+        sc.close();
+
+
+    }
+}
