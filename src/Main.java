@@ -1,55 +1,8 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        int opcao;
-
-        do {
-            System.out.println("===== MENU =====");
-            System.out.println("1 - Somar");
-            System.out.println("2 - Subtrair");
-            System.out.println("0 - sair");
-            System.out.print("Escolha uma opção: ");
-
-            try {
-                opcao = sc.nextInt();
-            } catch (InputMismatchException e) {
-                System.out.println("Entrada inválida! Digite apenas números.");
-                sc.next();   // limpar o buffer do scanner
-                opcao = -1; // força repetir o menu
-                continue;
-            }
-
-            switch (opcao) {
-                case 1:
-                    System.out.print("Digite o primeiro número: ");
-                    int num1 = sc.nextInt();
-                    System.out.print("Digite o segundo número: ");
-                    int num2 = sc.nextInt();
-                    int soma = num1 + num2;
-                    System.out.println("Resultado da soma: " + soma);
-                    break;
-                case 2:
-                    System.out.print("Digite o primeiro número: ");
-                    int num3 = sc.nextInt();
-                    System.out.print("Digite o segundo número: ");
-                    int num4 = sc.nextInt();
-                    int subtracao = num3 - num4;
-                    System.out.println("Resultado da subtração: " + subtracao);
-                    break;
-                case 0:
-                    System.out.println("Saindo do programa...");
-                    break;
-                default:
-                    System.out.println("Opção inválida. Tente novamente.");
-            }
-
-        }while (opcao != 0);
-
-        sc.close();
 
     }
 }
