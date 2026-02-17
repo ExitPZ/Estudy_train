@@ -1,43 +1,8 @@
-import java.util.Scanner;
 
 public class Main {
-
-    // SUA função de busca linear (sem alterar)
-    public static int buscaLinear(int[] v, int alvo) {
-        for (int i = 0; i < v.length; i++) {
-            if (v[i] == alvo) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        char asd = 'a';
 
-        int[] numeros = new int[10];
-
-
-        for (int i = 0; i < numeros.length; i++) {
-            System.out.print("Digite o número da posição " + i + ": ");
-            numeros[i] = sc.nextInt();
-        }
-
-
-        System.out.print("Digite o número que deseja buscar: ");
-        int alvo = sc.nextInt();
-
-
-        int posicao = buscaLinear(numeros, alvo);
-
-
-        if (posicao != -1) {
-            System.out.println("Número encontrado na posição: " + posicao);
-        } else {
-            System.out.println("Número não encontrado no array.");
-        }
-
-        sc.close();
     }
 }

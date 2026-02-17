@@ -1,0 +1,36 @@
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] test = new int[3][];
+
+        // have two ways to initialze the multidimensional array;
+
+        //first way (inline):
+        test[0] = new int[]{1, 2,};
+
+        //second way (using another array):
+        int numbers[] = {1, 2, 3, 4, 5, 6};
+        test[2] = numbers;
+
+
+        test[1] = new int[3];
+        for (int[] array : test) {
+            System.out.println("\n -----------");
+            for (int num : array) {
+                System.out.print(num + " ");
+            }
+        }
+
+        //we can initialize the multidimensional array in one line:
+        int[][] test2 = {{2, 4}, {12, 53, 62}, {74, 81, 29, 90, 234, 134}};
+
+        for (int[] array : test2) {
+            System.out.println("\n -----------");
+            for (int num : array) {
+                System.out.print(num + " ");
+            }
+        }
+
+
+    }
+}
