@@ -1,4 +1,4 @@
-package Semana_2.Object_Orientantion.Classes;
+package Semana_2.Object_Orientantion.Classes.Exercise;
 
 public class Student {
     public int age;
