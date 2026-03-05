@@ -5,6 +5,11 @@ public class Main {
         Employee emp1 = new Employee(30, "Alice", new double[]{52300, 32000, 60000});
         emp1.showInfo();
 
+        emp1.avaregeSalary();
+
+
+
+
 
 
     }
