@@ -1,0 +1,46 @@
+package Beecrowd.Excercise.Main;
+
+import java.util.Scanner;
+import java.util.Locale;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+
+        Scanner scanner = new Scanner(System.in);
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        double c = scanner.nextDouble();
+
+        double[] lados = {a, b, c};
+        Arrays.sort(lados);
+        a = lados[2];
+        b = lados[1];
+        c = lados[0];
+
+        if (a >= b + c) {
+            System.out.println("NAO FORMA TRIANGULO");
+        } else {
+            double a2 = a * a;
+            double bc2 = b * b + c * c;
+
+            if (Math.abs(a2 - bc2) < 0.0000001) {
+                System.out.println("TRIANGULO RETANGULO");
+            } else if (a2 > bc2) {
+                System.out.println("TRIANGULO OBTUSANGULO");
+            } else {
+                System.out.println("TRIANGULO ACUTANGULO");
+            }
+
+
+            if (a == b && b == c) {
+                System.out.println("TRIANGULO EQUILATERO");
+            } else if (a == b || b == c || a == c) {
+                System.out.println("TRIANGULO ISOSCELES");
+            }
+        }
+
+        scanner.close();
+    }
+}
